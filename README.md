@@ -1,2 +1,2 @@
 # 101-Random-Exercise-Python
-# Exercise python code and test
+# Exercise python code with unit test
