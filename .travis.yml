@@ -1,0 +1,9 @@
+language: python
+	python:  
+		- "3.8"
+	install:  
+		- pip install -e .
+	script:  
+	- pytest 01.\ Shape\ Formula/tests
+	- pytest 02.\ Random\ Password\ Generator/tests
+

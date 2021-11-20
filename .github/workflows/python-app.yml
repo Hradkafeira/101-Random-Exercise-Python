@@ -32,9 +32,9 @@ jobs:
     #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        cd 01.\ Shape\ Formula/
+        cd 01.\ Shape\ Formula/tests
         pytest
         cd ..
-        cd 02.\ Random\ Password\ Generator/
+        cd 02.\ Random\ Password\ Generator/tests
         pytest
         cd ..
