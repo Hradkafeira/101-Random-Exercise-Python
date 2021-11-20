@@ -3,16 +3,21 @@ import re
 from password_generator.random_pwd import pwd_generator
 
 class TestPwdGenerator(object):
-    def test_random_pwd(self):
-        pattern=r'[^a-zA-Z0-9\d]'
+
+    actual = pwd_generator()
+    expected=True
+    message="should be 3 alphabet 2 number and 2 character"
+
+    def test_random_pwd(self):        
         is_valid=False
-        if re.search(pattern, pwd_generator()):
-            is_valid=True
-        assert is_valid
+        pattern=r'[^a-zA-Z0-9\d]'
+        if re.search(pattern, TestPwdGenerator.actual):
+            is_valid=TestPwdGenerator.expected
+        assert is_valid, TestPwdGenerator.message
 
     def test_random_pwd2(self):
-        pattern=r'[^0-9a-zA-Z\d]'
         is_valid=False
-        if re.search(pattern, pwd_generator()):
-            is_valid=True
-        assert is_valid
+        pattern=r'[^a-zA-Z0-9\d]'
+        if re.search(pattern, TestPwdGenerator.actual):
+            is_valid=TestPwdGenerator.expected
+        assert is_valid, TestPwdGenerator.message

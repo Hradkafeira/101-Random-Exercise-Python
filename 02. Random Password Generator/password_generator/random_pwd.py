@@ -1,6 +1,8 @@
 import random
 
 def pwd_generator(): 
+    """Generate random password with combination 3 alphabet, 2 number and 2 character """
+    
     a="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     n="1234567890"
     c="""}{()[]"'~`!@#$%^&*_-+=|\\/:;<>,.?"""
