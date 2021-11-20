@@ -35,6 +35,8 @@ jobs:
         cd 01.\ Shape\ Formula/tests
         pytest
         cd ..
+        cd ..
         cd 02.\ Random\ Password\ Generator/tests
         pytest
+        cd ..
         cd ..
