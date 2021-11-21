@@ -1,1 +1,1 @@
-from .main import Shape2DFormula
+from .shape_2d import Shape2DFormula

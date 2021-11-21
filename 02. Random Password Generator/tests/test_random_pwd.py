@@ -6,7 +6,7 @@ class TestPwdGenerator(object):
 
     actual = pwd_generator()
     expected=True
-    message="should be 3 alphabet 2 number and 2 character"
+    message="should contain alphabet, number and character"
 
     def test_random_pwd(self):        
         is_valid=False
