@@ -40,3 +40,7 @@ jobs:
         pytest
         cd ..
         cd ..
+        cd 03.\ Fibonacci\ Number/tests
+        pytest
+        cd ..
+        cd ..
