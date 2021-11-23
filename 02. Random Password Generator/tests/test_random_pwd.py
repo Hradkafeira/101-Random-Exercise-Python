@@ -1,4 +1,3 @@
-import pytest
 import re
 from password_generator.random_pwd import pwd_generator
 

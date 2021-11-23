@@ -1,4 +1,3 @@
-import pytest
 from fibonacci_number import FibonnaciCollection
 
 fc=FibonnaciCollection()
