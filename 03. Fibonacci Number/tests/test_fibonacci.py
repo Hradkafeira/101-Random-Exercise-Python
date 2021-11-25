@@ -1,3 +1,4 @@
+import pytest
 from fibonacci_number import FibonnaciCollection
 
 fc=FibonnaciCollection()
@@ -16,10 +17,10 @@ class TestFibonnaciCollection(object):
         expected = 354224848179261915075
         assert actual == expected, TestFibonnaciCollection.message 
 
-    def test_fibonnaci_normal3(self):
-        actual = fc.fibonnaci(-10)
-        expected = None
-        assert actual == expected, TestFibonnaciCollection.message 
+    def test_fibonnaci_error(self):
+        with pytest.raises(AssertionError) as exc_info:
+            actual = fc.fibonnaci(-100)
+        assert exc_info
 
     def test_seq_fib_norm(self):
         actual = fc.seq_fibonnaci(10)[-1]
@@ -31,7 +32,7 @@ class TestFibonnaciCollection(object):
         expected = 354224848179261915075
         assert actual == expected, TestFibonnaciCollection.message
 
-    def test_seq_fib_norm3(self):
-        actual = fc.seq_fibonnaci(-10)
-        expected = None
-        assert actual == expected, TestFibonnaciCollection.message
+    def test_seq_fib_error(self):
+        with pytest.raises(AssertionError) as exc_info:
+            actual = fc.seq_fibonnaci(-10)
+        assert exc_info
