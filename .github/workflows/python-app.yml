@@ -31,4 +31,6 @@ jobs:
     #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        for dir in */;do pytest "$dir"''tests;done
+        for dir in */;do pytest --cov="$dir" "$dir"''tests;done
+    - name: Codecov python
+      uses: codecov/codecov-action@v2.1.0
