@@ -32,6 +32,6 @@ jobs:
     #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        for dir in */;do pytest "$dir" "$dir"''tests/; coverage xml -o "$dir.xml" "$dir"''tests/*.py;done
+        for dir in */;do pytest "$dir" "$dir"''tests/; coverage xml -o "$dir""coverage.xml" "$dir"''*/*.py;done
     - name: Codecov python
       uses: codecov/codecov-action@v2.1.0
