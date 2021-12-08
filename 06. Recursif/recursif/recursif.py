@@ -23,9 +23,3 @@ class RecursifCollection:
             return list[0] if list[0] > list[1] else list[1]
         sub_max = self.max_recursif(list[1:])
         return list[0] if list[0] > sub_max else sub_max
-
-rc=RecursifCollection()
-
-# print(sum_recursif([1,2,3]))
-# print(factorial(3))
-#print(rc.max_recursif([1,2,3,5,5,4]))
